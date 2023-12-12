@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pos</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+</head>
+<body>
+<!--        Home section-->
+<section id="homeSection">
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid text-white fw-bold">
+            <img src="assets/images/bank-terminal%20(1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            POS SYSTEM
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a href="#homeSection">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                    <a id="linkDashboard" class="nav-link active" aria-current="page" href="#customerSection">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="manageItems">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="manageOrders">Orders</a>
+                    </li>
+                </ul>
+                <form class="d-flex" >
+                    <img src="assets/images/sign-out.png" alt="logo" width="35" height="35">
+                    <button class="btn btn-outline-light fw-bold" type="submit">  signout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+<img src="assets/images/redhead-female-flower-seller-using-cash-register-market-shop.jpg" width="1275px" height="579px" >
+
+
+
+
+<!--Customer section-->
+<section id="customerSection">
+<div class="container">
+    <br>
+    <a href="#homeSection"> <img id="img1" src="assets/images/customer.png" alt="icon" width="40" height="40"></a>
+
+    <h1 class="d-inline-block align-text-top">CUSTOMER</h1>
+</div>
+<br>
+
+<div id="maincontainer" class="container bg-body-secondary shadow p-3 mb-5 bg-body-tertiary rounded bg-light">
+    <div id="customermanage" class="row bg-success-subtle">
+        <form>
+            <div class="mb-3 fw-bold">
+                <label for="customerId" class="form-label">Customer ID</label>
+                <input type="text" class="form-control" id="customerId" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customername" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="customername" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customeradd" class="form-label">Customer Address</label>
+                <input type="text" class="form-control" id="customeradd" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customersalary" class="form-label">Customer Salary</label>
+                <input type="text" class="form-control" id="customersalary" aria-describedby="emailHelp">
+            </div>
+            <button1 type="submit" class="btn btn-success text-black fw-bold">Save</button1>
+            <button1 type="submit" class="btn btn-info text-black fw-bold">Update</button1>
+            <button1 type="submit" class="btn btn-danger text-black fw-bold">Delete</button1>
+        </form>
+
+    </div>
+    <div id="searchcustomer" class="row">
+        <form class="container">
+            <div class="mb-3 fw-bold">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="customerid" class="form-label">Enter Customer ID</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp"><br>
+                <button type="submit" class="btn btn-warning fw-bold">Search Customer</button>
+                <img id="searchicon" src="assets/images/search.png" name="search icon" width="30" height="30">
+                <br>
+                <br>
+                <br>
+                <button id="customerdetails" type="submit" class="btn   text-white bg-secondary ">Customer Details
+                </button>
+                <button id="viewcus" type="submit" class="btn   text-white bg-primary">View All Customers</button>
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<br>
+<table class=" container table table-bordered table-hover">
+    <thead class="bg-primary text-white">
+    <tr>
+        <th>customer id</th>
+        <th>customer name</th>
+        <th>customer address</th>
+        <th>customer salary</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <td>C001</td>
+    <td>Isuri</td>
+    <td>Panadura</td>
+    <td>40000.00</td>
+
+    <tbody>
+    <td>C002</td>
+    <td>Desh</td>
+    <td>Galle</td>
+    <td>45000.00</td>
+
+    </tbody>
+</table>
+</section>
+
+<!--        Items section-->
+<section id="itemsSection">
+<div class="container">
+    <br>
+    <a href="#homeSection"><img src="assets/images/items.png" alt="icon" width="40" height="38"></a>
+
+    <h1 class="d-inline-block align-text-top">ITEMS</h1>
+</div>
+<br>
+
+
+<div class="container bg-body-secondary shadow p-3 mb-5 bg-body-tertiary rounded bg-light">
+    <div class="row bg-success-subtle">
+        <form>
+            <div class="mb-3 fw-bold">
+                <label for="itemId" class="form-label">Item Code</label>
+                <input type="text" class="form-control" id="itemId" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="itemname" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="itemname" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="quantity" class="form-label">quantity </label>
+                <input type="text" class="form-control" id="quantity" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="unitprice" class="form-label">Unit Price</label>
+                <input type="text" class="form-control" id="unitprice" aria-describedby="emailHelp">
+            </div>
+            <button1 type="submit" class="btn btn-success text-black fw-bold">Save</button1>
+            <button1 type="submit" class="btn btn-info text-black fw-bold">Update</button1>
+            <button1 type="submit" class="btn btn-danger text-black fw-bold">Delete</button1>
+        </form>
+
+    </div>
+    <div class="row">
+        <form class="container">
+            <div class="mb-3 fw-bold">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="itemId" class="form-label">Enter Item Code</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp"><br>
+                <button type="submit" class="btn btn-warning fw-bold">Search Item</button>
+                <img src="assets/images/search.png" name="search icon" width="30" height="30">
+                <br>
+                <br>
+                <br>
+                <button type="submit" class="btn   text-white bg-secondary">View Stock</button>
+                <button type="submit" class="btn   text-white bg-primary">Details</button>
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<br>
+<table class=" container table table-bordered table-hover">
+    <thead class="bg-primary text-white">
+    <tr>
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+    </tr>
+    </thead>
+
+    <tbody id="tblItemData">
+
+    <td>I001</td>
+    <td>Soap</td>
+    <td>5</td>
+    <td>100.00</td>
+
+    <tbody>
+    <td>I002</td>
+    <td>Shampoo</td>
+    <td>3</td>
+    <td>750.00</td>
+
+    </tbody>
+</table>
+</section>
+
+<!--        Orders section-->
+<section id="ordersSection">
+<div class="container">
+    <br>
+    <a href="#homeSection"></a>
+<!--    <img id="image" src="assets/images/note.png" alt="icon" width="40" height="40">-->
+    <h1 class="d-inline-block align-text-top">ORDERS</h1>
+</div>
+<br>
+
+
+<div class="row m-4 bg-body-secondary bg-body-secondary shadow p-3 mb-5 bg-body-tertiary rounded bg-light">
+    <form method="post">
+        <div class="row align-items-center g-3 fw-bold">
+            <div class="col-auto">
+                <label class="" for="inputEmail">Order ID</label>
+                <input type="text" class="form-control" placeholder="D002" required><br>
+
+
+                <label class="" for="inputEmail">Customer ID</label>
+                <input type="text" class="form-control" placeholder="C001" required>
+            </div>
+            <div class="col-auto">
+
+            </div>
+
+            <div class="col-auto">
+                <label class="" for="inputEmail">Item Code</label>
+                <input type="text" class="form-control" placeholder="I002" required><br>
+
+                <label class="" for="inputEmail">Item Name</label>
+                <input type="text" class="form-control" placeholder="Ball" required>
+            </div>
+
+            <div class="col-auto">
+
+            </div>
+            <div class="col-auto">
+                <label class="" for="inputEmail">Qty</label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="5" required><br>
+
+
+                <label class="" for="inputPassword">Unit Price</label>
+                <input type="text" class="form-control" id="inputPassword" placeholder="600.00" required>
+
+            </div>
+            <div class="col-auto"><br>
+                <button type="button" class="btn btn-success" style="width:100px;height:45px;">Add</button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary" style="width:100px; height:45px;">OrderDetail</button>
+            </div>
+            <div class="col-auto">
+                <div class="m-4" style="position:relative; bottom:20px;">
+                    <div class=" row g-3 fw-bold  ">
+                        <label>Total:3000.00</label>
+                        <div class=" fw-bold col">
+                            <label>Cash</label>
+                            <input type="text" class="form-control" placeholder="5000.00" aria-label="First name"><br>
+                            <label>Balance</label>
+                            <input type="text" class="form-control" placeholder="2200.00" aria-label="First name">
+                        </div>
+                        <div class="col fw-bold">
+                            <label>Discount</label>
+                            <input type="text" class="form-control" placeholder="200.00" aria-label="Last name">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+</div>
+
+
+<div class="row m-4 bg-body-secondary">
+    <table class=" container table table-bordered table-hover">
+        <thead class="bg-black text-white">
+        <tr>
+            <th>Order Id</th>
+            <th>Customer Id</th>
+            <th>Item Id</th>
+            <th>Qty</th>
+            <th>Unit Price</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <td>D001</td>
+        <td>C001</td>
+        <td>I002</td>
+        <td>1</td>
+        <td>750</td>
+        <td>2500.00</td>
+        <td>
+            <button class="btn btn-danger">Delete</button>
+        </td>
+        </tbody>
+
+        <tbody>
+        <td>D002</td>
+        <td>C003</td>
+        <td>I002</td>
+        <td>10</td>
+        <td>150</td>
+        <td>1500.00</td>
+        <td>
+            <button class="btn btn-danger">Delete</button>
+        </td>
+        </tbody>
+
+    </table>
+</div>
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+<script src="assets/jquery/jquery-3.6.4.min.js"></script>
+<script>
+    console.log("Hello");
+    document.getElementById("btnSave").addEventListener('click', function () {
+        //console.log("Clicked"+$);
+        if (!isValidDetails()) {
+            alert("Fill All The Texts with valid details and try Again")
+            return;
+        }
+        var row = "<tr>" + "<td>" + "{{id}}" + "</td>" + "<td>" + "{{name}}" + "</td>" + "<td>" + "{{price}}" + "</td>" + "<td>" + "{{qty}}" + "</td>" + "</tr>";
+        $('#tblItemData').append(row.compose({
+            'id': $('#itemId').val(),
+            'name': $('#itemname').val(),
+            'qty': $('#quantity').val(),
+            'price': $('#unitprice').val()
+        }));
+
+        clearFields();
+    });
+
+
+    function clearFields() {
+        $("#itemId").text('');
+        $("#itemname").text('');
+        $("#quantity").text('');
+        $("#unitprice").text('');
+    }
+
+
+    $("#manageCustomers").click(function () {
+        $('#customerSection').css("display", "block");
+        $('#itemsSection').css("display", "none");
+        $('#ordersSection').css("display", "none");
+        changeColor("#manageCustomers","#4e7cff");
+        changeColor("#manageItems","#797676");
+        changeColor("#manageOrders","#797676");
+
+    });
+
+    function changeColor(button,color){
+        $(button).css("border-bottom",color);
+        $(button).css("color",color);
+        /* $('#btnManageItems').css("border-bottom","5px solid #797676");
+         $('#btnManageItems').css("color","#797676");
+         $('#btnManageOrder').css("border-bottom","5px solid #797676");
+         $('#btnManageOrder').css("color","#797676");*/
+    }
+
+    $('#manageItems').click(function () {
+        $('#itemsSection').css("display", "block");
+        $('#customerSection').css("display", "none");
+        $('#ordersSection').css("display", "none");
+        changeColor("#manageCustomers","#797676");
+        changeColor("#manageItems","#4e7cff");
+        changeColor("#manageOrders","#797676");
+    });
+
+    $('#manageOrders').click(function () {
+        $('#itemsSection').css("display", "none");
+        $('#customerSection').css("display", "none");
+        $('#ordersSection').css("display", "block");
+        changeColor("#manageCustomers","#797676");
+        changeColor("#manageItems","#797676");
+        changeColor("#manageOrders","#4e7cff");
+    });
+
+    function isValidDetails() {
+        if ($("#itemId").val() === '') return false;
+        if ($("#itemname").val() === '') return false;
+        if ($("#quantity").val() === '') return false;
+        if ($("#unitprice").val() === '') return false;
+        return true;
+    }
+
+    String.prototype.compose = (function () {
+        var re = /\{{(.+?)\}}/g;
+        return function (o) {
+            return this.replace(re, function (_, k) {
+                return typeof o[k] != 'undefined' ? o[k] : '';
+            });
+        }
+    }());
+</script>
+
+</html>

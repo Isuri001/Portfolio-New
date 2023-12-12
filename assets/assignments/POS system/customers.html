@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customers</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+</head>
+<body>
+<section>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid text-white fw-bold">
+            <img  src="assets/images/bank-terminal%20(1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            POS SYSTEM
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="customers.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="items.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="orders.html">Orders</a>
+                    </li>
+                </ul>
+                <form class="d-flex" >
+                    <img src="assets/images/sign-out.png" alt="logo" width="35" height="35">
+                    <button class="btn btn-outline-light fw-bold" type="submit">  signout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<div class="container">
+    <br>
+    <img id="img1" src="assets/images/customer.png" alt="icon" width="40" height="40">
+    <h1 class="d-inline-block align-text-top">CUSTOMER</h1>
+</div><br>
+
+<div id="maincontainer" class="container bg-body-secondary shadow p-3 mb-5 bg-body-tertiary rounded bg-light">
+    <div id="customermanage" class="row bg-success-subtle">
+        <form >
+            <div class="mb-3 fw-bold">
+                <label for="customerId" class="form-label">Customer ID</label>
+                <input type="text" class="form-control" id="customerId" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customername" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="customername" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customeradd" class="form-label">Customer Address</label>
+                <input type="text" class="form-control" id="customeradd" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="customersalary" class="form-label">Customer Salary</label>
+                <input type="text" class="form-control" id="customersalary" aria-describedby="emailHelp">
+            </div>
+            <button1   type="submit" class="btn btn-success text-black fw-bold">Save</button1>
+            <button1  type="submit" class="btn btn-info text-black fw-bold">Update</button1>
+            <button1   type="submit" class="btn btn-danger text-black fw-bold">Delete</button1>
+        </form>
+
+    </div>
+    <div id="searchcustomer" class="row">
+        <form class="container">
+            <div class="mb-3 fw-bold">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="customerid" class="form-label">Enter Customer ID</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp"><br>
+                <button type="submit" class="btn btn-warning fw-bold">Search Customer</button>
+                <img id="searchicon" src="assets/images/search.png" name="search icon" width="30" height="30">
+                <br>
+                <br>
+                <br>
+                <button id="customerdetails" type="submit" class="btn   text-white bg-secondary ">Customer Details</button>
+                <button id="viewcus" type="submit" class="btn   text-white bg-primary">View All Customers</button>
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<br>
+<table class=" container table table-bordered table-hover">
+    <thead class="bg-primary text-white">
+    <tr>
+        <th>customer id</th>
+        <th>customer name</th>
+        <th>customer address</th>
+        <th>customer salary</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <td>C001</td>
+    <td>Isuri</td>
+    <td>Panadura</td>
+    <td>40000.00</td>
+
+    <tbody>
+    <td>C002</td>
+    <td>Desh</td>
+    <td>Galle</td>
+    <td>45000.00</td>
+
+    </tbody>
+</table>
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

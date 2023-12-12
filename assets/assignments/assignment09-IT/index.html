@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KITT</title>
+    <style>
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: black;
+        }
+        #light-panel {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+            width: fit-content;
+            height: fit-content;
+        }
+        #light-panel .light {
+            width: 50px;
+            height: 20px;
+            border: 0.5px solid gray;
+            display: inline-block;
+        }
+
+        #button-panel {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            bottom: 0;
+            top: 70px;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<section id="button-panel">
+    <button type="button" id="start">Start</button>
+    <button type="button" id="stop">Stop</button>
+</section>
+
+<section id="light-panel">
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+</section>
+
+
+<section id="audio-panel">
+    <audio id="audio" src="../../assets/audio/Knight%20Rider%20Sms%20!%20Knight%20Rider%20!%20Theme.mp3\"></audio>
+</section>
+
+<script src="../../assets/lib/jQuery/jquery-3.6.4.min.js"></script>
+
+<script>
+
+    var lightNumber = 0;
+    var direction = "RIGHT" ;
+    let intervalId =null;
+
+    var lights =$('.light');
+    console.log(lights);
+    // lights[3].style.background ='red';
+
+    function updateLights() {
+        $('.light').css({background: 'white'});
+
+        lights[lightNumber].style.background = 'red';
+
+
+        if (lightNumber > 0) {
+            lights[lightNumber - 1].style.background = 'pink';
+        }
+
+        if (lightNumber > 6) {
+            lights[lightNumber + 1].style.background = 'pink';
+        }
+
+        if (lightNumber == 6) {
+            direction = 'LEFT'
+        }
+
+        if (lightNumber == 0) {
+            direction = 'RIGHT'
+        }
+
+        if (direction === "RIGHT") {
+            lightNumber++;
+        } else {
+            lightNumber--;
+        }
+    }
+
+
+
+    $('#start').on('click' ,() =>{
+        $('#audio')[0].play();
+        intervalId = setInterval(updateLights, 100);
+    });
+
+    $('#stop').on('click' ,() =>{
+        $('#audio')[0].pause();
+        clearInterval(intervalId);
+    });
+
+
+</script>
+</body>
+</html>
+
+<!--
+
+timers
+01) setTimeOut
+02) setInterval-->
